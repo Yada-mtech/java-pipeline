@@ -38,10 +38,12 @@ junitPlatform {
     filters {
         includeClassNamePattern '.*Spec'
         enableStandardTestTask false
-        ignoreFailures = true
+        
     }
 }
-
+test {
+    ignoreFailures = true
+}
 afterEvaluate {
     jacoco {
         toolVersion = '0.7.4.201502262128'
