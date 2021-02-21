@@ -28,6 +28,7 @@ public class Progress {
 
     public int inProgress() {
         return this.inProgress;
+        System.out.println("Test sonar");
     }
 
 }
